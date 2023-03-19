@@ -10,8 +10,8 @@ rule "User type based discount - FIRSTLEVEL"
         // 当用户类型是FIRSTLEVEL
         PayInfoModel(userType.getValue == "FIRSTLEVEL")
     then
-        System.out.println("==========20%的折扣=============");
-        payInfoModel.setAmount((payInfoModel.getAmount() * 4 / 5 ));
+        System.out.println("==========40%的折扣=============");
+        payInfoModel.setAmount((payInfoModel.getAmount() * 3 / 5 ));
     end
 
 // 规则2： 根据用户类型规则
